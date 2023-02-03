@@ -2,37 +2,88 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: darkorchid;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: flex-end;
+}
+
+.navbar.links {
+  text-align: center;
+  margin-right: 50px;
+}
+
+.links a {
+  color: azure;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 10px;
+}
+
+.navbar .user {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  margin-right: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.user p {
+  font-size: 15px;
+  margin-right: 10px;
+  color: wheat;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.user img {
+  font-size: 15px;
+  border-radius: 50%;
+}
+
+input textarea {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.create-post {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  margin-top: 50px;
+  padding: 30px 20px;
+  width: 320px;
+  border-radius: 7px;
+  background-color: white;
+  backdrop-filter: blur(5px);
+  background-color: rgb(162, 190, 240);
+  overflow: hidden;
+}
+input,
+textarea {
+  padding: 8px 10px;
+  margin: 3px 8px 16px 8px;
+  background-color: aliceblue;
+  border: 0px transparent;
+  border-radius: 10px;
+  color: blueviolet;
+  font-size: 16px;
+  z-index: 1;
+}
+
+.submitFormButton:hover {
+  cursor: pointer;
+}
+
+.post-title {
+}
+
+.post-description {
+}
+
+.post-username {
 }
